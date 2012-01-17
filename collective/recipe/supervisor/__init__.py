@@ -119,7 +119,7 @@ class Recipe(object):
                         extras.append( "%s = %s" % (key, value) )
 
             config_data += PROGRAM_TEMPLATE % \
-                           dict(program = parts.get('processname'),
+                           dict(program = parts.get('processname').split('%')[0],
                                 command = parts.get('command'),
                                 priority = parts.get('priority'),
                                 redirect_stderr = parts.get('redirect') or \
