@@ -23,7 +23,7 @@ long_description = (
     'Detailed Documentation\n'
     '**********************\n'
     + '\n' +
-    read('collective', 'recipe', 'supervisor', 'README.txt')
+    read('fourdigits', 'recipe', 'supervisor', 'README.txt')
     + '\n' +
     'Contributors\n'
     '************\n'
@@ -56,7 +56,7 @@ setup(name='fourdigits.recipe.supervisor',
       url='http://pypi.python.org/pypi/fourdigits.recipe.supervisor',
       license='ZPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['collective', 'collective.recipe'],
+      namespace_packages=['fourdigits', 'fourdigits.recipe'],
       include_package_data=True,
       zip_safe=False,
       install_requires=['setuptools',

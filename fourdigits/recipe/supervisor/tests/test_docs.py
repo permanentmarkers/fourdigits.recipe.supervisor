@@ -22,7 +22,7 @@ def setUp(test):
     zc.buildout.testing.install_develop('fourdigits.recipe.supervisor', test)
 
     # Install any other recipes that should be available in the tests
-    #zc.buildout.testing.install('collective.recipe.foobar', test)
+    #zc.buildout.testing.install('fourdigits.recipe.foobar', test)
 
 
 def test_suite():
