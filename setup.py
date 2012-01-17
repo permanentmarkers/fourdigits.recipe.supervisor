@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-This module contains the tool of collective.recipe.supervisor
+This module contains the tool of fourdigits.recipe.supervisor
 """
 
 import os
@@ -33,12 +33,12 @@ long_description = (
     'Download\n'
     '********\n')
 
-entry_point = 'collective.recipe.supervisor:Recipe'
+entry_point = 'fourdigits.recipe.supervisor:Recipe'
 entry_points = {"zc.buildout": ["default = %s" % entry_point]}
 
 tests_require = ['zope.testing']
 
-setup(name='collective.recipe.supervisor',
+setup(name='fourdigits.recipe.supervisor',
       version=version,
       description="A buildout recipe to install supervisor",
       long_description=long_description,
@@ -53,7 +53,7 @@ setup(name='collective.recipe.supervisor',
       keywords='buildout recipe supervisor',
       author='Mustapha Benali',
       author_email='mustapha@headnet.dk',
-      url='http://pypi.python.org/pypi/collective.recipe.supervisor',
+      url='http://pypi.python.org/pypi/fourdigits.recipe.supervisor',
       license='ZPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['collective', 'collective.recipe'],
@@ -66,6 +66,6 @@ setup(name='collective.recipe.supervisor',
                         ],
       tests_require=tests_require,
       extras_require=dict(tests=tests_require),
-      test_suite = 'collective.recipe.supervisor.tests.test_docs.test_suite',
+      test_suite = 'fourdigits.recipe.supervisor.tests.test_docs.test_suite',
       entry_points=entry_points,
       )

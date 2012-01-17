@@ -156,7 +156,7 @@ We'll start by creating a buildout that uses the recipe::
     ... location = /g/h
     ...
     ... [supervisor]
-    ... recipe = collective.recipe.supervisor
+    ... recipe = fourdigits.recipe.supervisor
     ... plugins =
     ...       superlance
     ... port = 9001
@@ -386,7 +386,7 @@ script will automatically try to connect to the specified port:
     ... index = http://pypi.python.org/simple/
     ...
     ... [supervisor]
-    ... recipe = collective.recipe.supervisor
+    ... recipe = fourdigits.recipe.supervisor
     ... port = 9005
     ... programs =
     ...       50 other ${buildout:bin-directory}/other [-n 100] /tmp
@@ -418,7 +418,7 @@ It is possible to run http server through `unix socket
     ... index = http://pypi.python.org/simple/
     ...
     ... [supervisor]
-    ... recipe = collective.recipe.supervisor
+    ... recipe = fourdigits.recipe.supervisor
     ... http-socket = unix
     ... user = foobar
     ... password = foobar

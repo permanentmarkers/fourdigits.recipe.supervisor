@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Doctest runner for 'collective.recipe.supervisor'.
+Doctest runner for 'fourdigits.recipe.supervisor'.
 """
 __docformat__ = 'restructuredtext'
 
@@ -19,7 +19,7 @@ def setUp(test):
     zc.buildout.testing.buildoutSetUp(test)
 
     # Install the recipe in develop mode
-    zc.buildout.testing.install_develop('collective.recipe.supervisor', test)
+    zc.buildout.testing.install_develop('fourdigits.recipe.supervisor', test)
 
     # Install any other recipes that should be available in the tests
     #zc.buildout.testing.install('collective.recipe.foobar', test)
