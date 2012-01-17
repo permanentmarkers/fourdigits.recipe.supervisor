@@ -120,6 +120,7 @@ class Recipe(object):
 
             config_data += PROGRAM_TEMPLATE % \
                            dict(program = parts.get('processname').split('%')[0],
+                                process_name = parts.get('processname'),
                                 command = parts.get('command'),
                                 priority = parts.get('priority'),
                                 redirect_stderr = parts.get('redirect') or \
@@ -288,7 +289,7 @@ supervisor.rpcinterface_factory=supervisor.rpcinterface:make_main_rpcinterface
 PROGRAM_TEMPLATE = """
 [program:%(program)s]
 command = %(command)s %(args)s
-process_name = %(program)s
+process_name = %(process_name)s
 directory = %(directory)s
 priority = %(priority)s
 redirect_stderr = %(redirect_stderr)s
